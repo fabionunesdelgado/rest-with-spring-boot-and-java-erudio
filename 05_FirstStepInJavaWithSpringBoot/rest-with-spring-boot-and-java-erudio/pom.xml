@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>20</java.version>
 		<dozer.version>6.4.0</dozer.version>
+		<!--<modelmapper.version>3.1.1</modelmapper.version>-->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -36,6 +37,11 @@
 			<artifactId>dozer-core</artifactId>
 			<version>${dozer.version}</version>
 		</dependency>
+		<!--<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
