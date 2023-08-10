@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.erudio.data.vo.v1.BookVO;
-import br.com.erudio.data.vo.v1.PersonVO;
 import br.com.erudio.services.BookServices;
 import br.com.erudio.util.MediaType;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,6 +22,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+// CORS pode ser adicionado no Controller inteiro ou por operação
+//@CrossOrigin(origins = {"http://localhost:8080","https://localhost:443"})// Desabilitado para ser aplicado global (via yaml)
 @RestController
 @RequestMapping(value = "/api/book")
 @Tag(name = "Book", description = "Endpoints para manutenção de livros")

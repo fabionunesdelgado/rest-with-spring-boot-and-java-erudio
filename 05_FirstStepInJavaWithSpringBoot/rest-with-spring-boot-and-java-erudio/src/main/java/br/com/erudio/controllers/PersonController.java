@@ -24,6 +24,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+//CORS pode ser adicionado no Controller inteiro ou por operação
+//@CrossOrigin(origins = {"http://localhost:8080","https://localhost:443"}) // Desabilitado para ser aplicado global (via yaml)
 @RestController
 @RequestMapping(value="/api/person")
 @Tag(name = "Person", description = "Endpoints para manutenção de pessoas")
